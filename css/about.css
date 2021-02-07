@@ -1,0 +1,17 @@
+.about {
+  background: #EEE;
+  padding-bottom: 40px;
+}
+
+.about-content {
+  margin-top: 40px;
+}
+
+.about-content-inner {
+  padding: 20px;
+  background: #FFF;
+}
+
+.about-content-title {
+  font-size: 24px;
+}
