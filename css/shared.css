@@ -1,4 +1,10 @@
 /**
+ * FONT
+ */
+* {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+/**
  * HEADER
  */
 .header {
