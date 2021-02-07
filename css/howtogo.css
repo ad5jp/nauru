@@ -1,0 +1,17 @@
+.howtogo {
+  background: #EEE;
+  padding-bottom: 40px;
+}
+
+.howtogo-content {
+  margin-top: 40px;
+}
+
+.howtogo-content-inner {
+  padding: 20px;
+  background: #FFF;
+}
+
+.howtogo-content-title {
+  font-size: 24px;
+}

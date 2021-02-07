@@ -1,0 +1,25 @@
+.faq {
+  background: #EEE;
+  padding-bottom: 40px;
+}
+
+.faq-content {
+  margin-top: 40px;
+}
+
+.faq-list {
+  padding: 20px;
+  background: #FFF;
+}
+
+.faq-list-question {
+  margin-top: 30px;
+}
+
+.faq-list-question:first-child {
+  margin-top: 0;
+}
+
+.faq-list-answer {
+  margin-top: 10px;
+}
