@@ -1,0 +1,101 @@
+/*
+Theme Name: Nauru
+Text Domain: nauru
+Version: 0.1
+*/
+
+/* the_posts_pagination() の対応 */
+
+.screen-reader-text {display: none !important;}
+.paginator{
+    position:relative;
+}
+.paginator * {
+    line-height: 1.7em;
+    display: inline-block;
+    margin:0 5px;
+}
+.paginator .current,
+.paginator a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #4985bd;
+    color: #fff;
+    text-align: center;
+}
+.paginator .current{
+    background: rgba(3,62,128,1);
+}
+@media screen and (max-width: 680px) {
+    .paginator * {
+        margin:0 2px;
+    }
+}
+
+/* 会社概要ブロックエディタ用 */
+
+.block-editor-about {
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-editor img{
+    max-width: 100%;
+}
+
+.block-editor .wp-block-verse {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-shadow: 0 1px 1px rgba(0, 0, 128, 0.3);
+}
+
+.block-editor .wp-block-quote {
+    margin: 1em;
+    padding: 1.5em 2em;
+    border: 5px solid #EEE;
+}
+
+.block-editor h2 {
+    margin: 30px -20px 15px;
+    padding: 10px 20px;
+    background: #eee;
+    font-size: 21px;
+}
+.block-editor h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.block-editor h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #4985bd;
+}
+
+.block-editor ul {
+    margin: 0;
+    padding: 0 1em;
+    list-style-type: none;
+}
+.block-editor li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 0 0 1.5em;
+    line-height: 1.7;
+}
+.block-editor li:before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    top: calc( 0.85em - 6px );
+    color: rgba(3,62,128,1);
+    font-size: 12px;
+    vertical-align: middle;
+}
