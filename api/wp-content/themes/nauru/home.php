@@ -39,16 +39,16 @@
     </div>
 </section>
 
-<section class="home-topics">
-    <h2 class="home-topics-title">お知らせ</h2>
-    <ul class="home-topics-list">
+<section class="home-information">
+    <h2 class="home-information-title">お知らせ</h2>
+    <ul class="home-information-list">
         <?php
             while ( $this->info_query->have_posts() ):
             $this->info_query->the_post();
         ?>
-        <li class="home-topics-list-item">
-            <date class="home-topics-list-item-date"><?php echo get_the_date(); ?></date>
-            <a class="home-topics-list-item-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        <li class="home-information-list-item">
+            <date class="home-information-list-item-date"><?php echo get_the_date(); ?></date>
+            <a class="home-information-list-item-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </li>
         <?php
             endwhile;
@@ -56,7 +56,7 @@
         ?>
         </li>
     </ul>
-    <a href="<?php echo get_post_type_archive_link( Nauru\Types\Information::SLUG ); ?>" class="home-topics-more">もっと読む</a>
+    <a href="<?php echo get_post_type_archive_link( Nauru\Types\Information::SLUG ); ?>" class="home-information-more">もっと読む</a>
 </section>
 
 </main><!--//.home-->

@@ -62,7 +62,7 @@ class Migration
 
 		$page = array(
 			'post_type' => 'page',
-			'post_title' => '当観光局について',
+			'post_title' => '当サイトについて',
 			'post_name' => 'profile',
 			'post_status' => 'publish',
 		);

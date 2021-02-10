@@ -11,4 +11,7 @@ class Faq extends Base_Type
 {
     const SLUG = 'faq';
     const LABEL = 'よくある質問';
+
+    protected $supports = array( 'title', 'editor','author', 'page-attributes' );
+
 }

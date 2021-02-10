@@ -11,4 +11,6 @@ class Information extends Base_Type
 {
     const SLUG = 'information';
     const LABEL = 'お知らせ';
+
+    protected $supports = array( 'title', 'editor','author', 'page-attributes' );
 }

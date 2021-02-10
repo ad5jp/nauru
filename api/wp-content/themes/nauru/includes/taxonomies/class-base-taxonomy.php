@@ -21,7 +21,12 @@ class Base_Taxonomy
         if ( ! static::SLUG || ! static::LABEL || ! static::POST_TYPE ) {
             throw new \Exception('taxonomy class ' . static::class . ' doesnt have required consts');
         }
-        add_action( 'init', array( $this, 'register' ) );
+
+		add_action( 'init', array( $this, 'register' ) );
+
+		if ( isset( $this->rewrite['slug'] ) ) {
+			add_action( 'init', array( $this, 'rewrite' ) );
+		}
     }
 
     public function register()
@@ -42,5 +47,12 @@ class Base_Taxonomy
 
 		register_taxonomy_for_object_type( static::SLUG, static::POST_TYPE );
 
-    }
+	}
+	
+	public function rewrite()
+	{
+		$pattern = $this->rewrite['slug'] . '/([^/]+)/?$';
+		$rewrite = 'index.php?' . self::SLUG . '=$matches[1]';
+		add_rewrite_rule( $pattern, $rewrite, 'top');	
+	}
 }

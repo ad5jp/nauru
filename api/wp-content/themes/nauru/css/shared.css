@@ -1,4 +1,10 @@
 /**
+ * Main Color : #104FA1
+ *   - pale : #F0F5FC
+ *   - light : #DAE5F5
+ * Accent Color : #FEFF00
+ */
+/**
  * FONT
  */
 * {
@@ -121,7 +127,86 @@
   text-shadow: 0px 0px 1px #104FA1;
 }
 
-.content p {
-  margin-top: 20px;
+.page {
+  background: #F0F5FC;
+  padding-bottom: 40px;
+}
+
+.page-content {
+  margin-top: 40px;
+}
+
+.page-content-inner {
+  padding: 20px;
+  background: #FFF;
+}
+
+/**
+ * Styles For Block Editor
+ */
+.block-editor-content {
   line-height: 1.8;
+}
+
+.block-editor-content *:first-child {
+  margin-top: 0;
+}
+
+.block-editor-content h1,
+.block-editor-content h2 {
+  position: relative;
+  margin: 45px -5px 0;
+  padding: 5px 5px 8px;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.block-editor-content h1::before,
+.block-editor-content h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 3px;
+  background: #FEFF00;
+}
+
+.block-editor-content h1::after,
+.block-editor-content h2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 3px;
+  background: #104FA1;
+}
+
+.block-editor-content h3 {
+  margin-top: 30px;
+  font-size: 120%;
+  color: #104FA1;
+}
+
+.block-editor-content h4,
+.block-editor-content h5,
+.block-editor-content h6 {
+  margin-top: 15px;
+}
+
+.block-editor-content p {
+  margin-top: 15px;
+}
+
+.block-editor-content ul {
+  margin-top: 15px;
+  margin-left: 40px;
+  list-style-type: disc;
+}
+
+.block-editor-content ol {
+  margin-top: 15px;
+  margin-left: 40px;
+  list-style-type: decimal;
 }

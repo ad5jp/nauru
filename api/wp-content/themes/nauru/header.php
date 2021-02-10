@@ -34,7 +34,7 @@
             <li class="header-nav-list-item">
                 <a href="<?php echo home_url( 'profile' ); ?>">
                     <div class="header-nav-list-item-subtitle">PROFILE</div>
-                    <div class="header-nav-list-item-title">当観光局について</div>
+                    <div class="header-nav-list-item-title">当サイトについて</div>
                 </a>
             </li>
         </ul>

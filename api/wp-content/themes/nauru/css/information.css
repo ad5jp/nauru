@@ -1,0 +1,11 @@
+.information {
+  background: #F0F5FC;
+  padding-bottom: 40px;
+}
+
+.information-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
