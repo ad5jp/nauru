@@ -13,7 +13,7 @@
         <h1 class="information-title"><?php the_title(); ?></h1>
         <div class="information-date"><date><?php echo get_the_date(); ?></date></div>
     </div>
-    <div class="information-body block-editor-content">
+    <div class="information-body classic-editor-content">
         <?php the_content(); ?>
     </div>
 </section>

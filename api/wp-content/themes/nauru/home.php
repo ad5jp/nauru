@@ -32,7 +32,7 @@
             </a>
             <a href="<?php echo home_url( 'profile' ); ?>" class="home-nav-list-item">
                 <div class="home-nav-list-item-subtitle">PROFILE</div>
-                <div class="home-nav-list-item-title">当観光局について</div>
+                <div class="home-nav-list-item-title">当サイトについて</div>
                 <div class="home-nav-list-item-icon"><i class="fa fa-rss"></i></div>
             </a>
         </nav>

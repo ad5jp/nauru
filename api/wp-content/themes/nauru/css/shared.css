@@ -73,8 +73,10 @@
   .header-nav-toggle {
     display: block;
     width: 100px;
-    padding: 20px;
-    text-align: center;
+    padding: 15px 20px;
+    text-align: right;
+    color: #FFF;
+    font-size: 30px;
   }
 }
 
@@ -152,6 +154,11 @@
   margin-top: 0;
 }
 
+.block-editor-content img {
+  max-width: 100%;
+  height: auto;
+}
+
 .block-editor-content h1,
 .block-editor-content h2 {
   position: relative;
@@ -206,6 +213,81 @@
 }
 
 .block-editor-content ol {
+  margin-top: 15px;
+  margin-left: 40px;
+  list-style-type: decimal;
+}
+
+/**
+ * Styles For Classic Editor
+ */
+.classic-editor-content {
+  line-height: 1.8;
+}
+
+.classic-editor-content *:first-child {
+  margin-top: 0;
+}
+
+.classic-editor-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.classic-editor-content h1,
+.classic-editor-content h2 {
+  position: relative;
+  margin: 45px -5px 0;
+  padding: 5px 5px 8px;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.classic-editor-content h1::before,
+.classic-editor-content h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 3px;
+  background: #FEFF00;
+}
+
+.classic-editor-content h1::after,
+.classic-editor-content h2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 3px;
+  background: #104FA1;
+}
+
+.classic-editor-content h3 {
+  margin-top: 30px;
+  font-size: 120%;
+  color: #104FA1;
+}
+
+.classic-editor-content h4,
+.classic-editor-content h5,
+.classic-editor-content h6 {
+  margin-top: 15px;
+}
+
+.classic-editor-content p {
+  margin-top: 15px;
+}
+
+.classic-editor-content ul {
+  margin-top: 15px;
+  margin-left: 40px;
+  list-style-type: disc;
+}
+
+.classic-editor-content ol {
   margin-top: 15px;
   margin-left: 40px;
   list-style-type: decimal;
