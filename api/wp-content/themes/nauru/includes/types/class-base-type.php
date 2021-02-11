@@ -109,8 +109,6 @@ class Base_Type
 			$nonce_key = 'theme_nonce_' . static::SLUG . '_' . $key;
 			
 			if ( empty( $_POST[$metabox_key] ) ) {
-				var_dump($_POST);
-				die('3');
 				continue;
 			}
 
