@@ -194,6 +194,11 @@
   height: auto;
 }
 
+.block-editor-content a {
+  color: #104FA1;
+  text-decoration: underline;
+}
+
 .block-editor-content h1,
 .block-editor-content h2 {
   position: relative;
@@ -267,6 +272,11 @@
 .classic-editor-content img {
   max-width: 100%;
   height: auto;
+}
+
+.classic-editor-content a {
+  color: #104FA1;
+  text-decoration: underline;
 }
 
 .classic-editor-content h1,

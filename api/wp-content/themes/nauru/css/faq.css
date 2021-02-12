@@ -13,13 +13,44 @@
 }
 
 .faq-list-question {
+  position: relative;
   margin-top: 30px;
+  padding: 5px 0 0 40px;
+  line-height: 1.8;
 }
+
+.faq-list-question i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+  font-size: 30px;
+  color: #104FA1;
+}
+
 
 .faq-list-question:first-child {
   margin-top: 0;
 }
 
 .faq-list-answer {
+  position: relative;
   margin-top: 10px;
+  padding: 5px 0 0 40px;
+  line-height: 1.8;
+}
+
+.faq-list-answer i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+  font-size: 30px;
+  color: #E3D902;
+  /* color: #F4EB20; */
+  font-weight: bold;
+}
+
+.faq-list-answer img {
+  max-width: 100%;
 }
