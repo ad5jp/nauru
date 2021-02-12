@@ -14,6 +14,7 @@
  * HEADER
  */
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -30,6 +31,10 @@
 .header-branding img {
   width: 100%;
   height: auto;
+}
+
+.header-nav-open {
+  display: none;
 }
 
 @media (min-width: 901px) {
@@ -67,7 +72,33 @@
 
 @media (max-width: 900px) {
   .header-nav-list {
-    display: none;
+    position: absolute;
+    display: block;
+    left: 100%;
+    top: 65px;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    transition: left 0.5s;
+  }
+
+  .header-nav-open:checked + .header-nav-list {
+    left: 0;
+  }
+
+  .header-nav-list-item {
+    border-bottom: 1px solid #FFF;
+  }
+
+  .header-nav-list-item a {
+    display: flex;
+    padding: 15px;
+    color: #FFF;
+  }
+
+  .header-nav-list-item-subtitle {
+    flex-basis: 80px;
+    font-size: 80%;
+    color: #FEFF00;
   }
 
   .header-nav-toggle {
