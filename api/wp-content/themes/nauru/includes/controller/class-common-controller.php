@@ -30,8 +30,6 @@ class Common_Controller
 
         //タイトルタグ
         add_filter( 'document_title_parts', array( $this, 'modify_document_title' ) );
-
-        $this->template_include();
     }
 
     public function breadcramb()
@@ -104,7 +102,7 @@ class Common_Controller
      * Router の template_include で強制的に false を返し、
      * 代わりにここで include する。
      */
-    protected function template_include()
+    public function template_include()
     {
         include( $this->template );
     }

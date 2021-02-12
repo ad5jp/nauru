@@ -28,6 +28,9 @@ class Router
 			self::$controller = new Controller\Common_Controller($template);
 		}
 
+		//テンプレートの読み込み
+		self::$controller->template_include();
+
 		//コントローラ内から読み込むため、殺す
 		//@see Common_Controller::template_include
 		return false;
