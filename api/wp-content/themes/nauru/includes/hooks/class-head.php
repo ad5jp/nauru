@@ -58,18 +58,18 @@ class Head
     {
         //todo メタタグ出力
         ?>
-            <meta name="keywords" content="">
-            <meta name="description" content="">
-            <meta property="og:title" content="">
-            <meta property="og:type" content="">
-            <meta property="og:url" content="">
-            <meta property="og:image" content="">
-            <meta property="og:site_name"  content="">
-            <meta property="og:description" content="">
-            <meta property="fb:app_id" content="">
-            <meta name="twitter:card" content="">
-            <link rel="icon" href="">
-            <link rel="apple-touch-icon" sizes="120x120" href="">
+            <!-- <meta name="keywords" content=""> -->
+            <!-- <meta name="description" content=""> -->
+            <!-- <meta property="og:title" content=""> -->
+            <!-- <meta property="og:type" content=""> -->
+            <!-- <meta property="og:url" content=""> -->
+            <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/home/back04.jpg">
+            <!-- <meta property="og:site_name"  content=""> -->
+            <!-- <meta property="og:description" content=""> -->
+            <!-- <meta property="fb:app_id" content=""> -->
+            <meta name="twitter:card" content="summary">
+            <!-- <link rel="icon" href=""> -->
+            <!-- <link rel="apple-touch-icon" sizes="120x120" href=""> -->
         <?php
     }
 
@@ -79,11 +79,18 @@ class Head
      */
     public function tracking()
     {
-        if ( is_user_logged_in() || $_SERVER['SERVER_NAME'] == 'localhost' || strpos($_SERVER['SERVER_NAME'], 'ad5.dev') !== false ) {
+        if ( is_user_logged_in() || $_SERVER['SERVER_NAME'] == 'localhost' ) {
             return;
         }
         ?>
-            <!-- todo トラッキングコード -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-CG7KK4BKSH"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CG7KK4BKSH');
+            </script>
         <?php
     }
 
