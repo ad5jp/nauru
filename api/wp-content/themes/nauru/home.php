@@ -5,7 +5,7 @@
 <div class="home-background"></div>
 
 <section class="home-main">
-    <h1 class="home-main-branding"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/shared/logo.png" alt=""></a></h1>
+    <h1 class="home-main-branding"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/shared/logo-blue.png" alt="<?php echo get_bloginfo( 'name' ); ?>"></a></h1>
     <div class="home-main-tagline">
         <div class="home-main-tagline-baloon">コロナが収束したら</div>
         <p>ナウルへ行こう!!</p>

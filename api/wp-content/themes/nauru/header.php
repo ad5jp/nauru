@@ -9,7 +9,7 @@
 
 <?php if ( ! is_home() ): ?>
 <header class="header">
-    <div class="header-branding"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/shared/logo.png" alt=""></a></div>
+    <div class="header-branding"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/shared/logo-white.png" alt="<?php echo get_bloginfo( 'name' ); ?>"></a></div>
     <nav class="header-nav">
         <label for="header-nav-open" class="header-nav-toggle"><i class="fa fa-bars"></i></label>
         <input type="checkbox" class="header-nav-open" id="header-nav-open">

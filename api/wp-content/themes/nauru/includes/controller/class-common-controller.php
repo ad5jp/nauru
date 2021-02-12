@@ -184,7 +184,6 @@ class Common_Controller
         if ( $get_document_title_page = $this->get_document_title_page() ) {
             $title['title'] = $get_document_title_page;
         }
-        $title['site'] = 'ナウル共和国非公式サイト';
         return $title;
     }
 

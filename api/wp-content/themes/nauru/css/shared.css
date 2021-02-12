@@ -2,7 +2,7 @@
  * Main Color : #104FA1
  *   - pale : #F0F5FC
  *   - light : #DAE5F5
- * Accent Color : #FEFF00
+ * Accent Color : #F4EB20
  */
 /**
  * FONT
@@ -56,7 +56,7 @@
 
   .header-nav-list-item-subtitle {
     margin-bottom: 5px;
-    color: #FEFF00;
+    color: #F4EB20;
     font-size: 12px;
   }
 
@@ -98,7 +98,7 @@
   .header-nav-list-item-subtitle {
     flex-basis: 80px;
     font-size: 80%;
-    color: #FEFF00;
+    color: #F4EB20;
   }
 
   .header-nav-toggle {
@@ -207,7 +207,7 @@
   bottom: 0;
   width: 20%;
   height: 3px;
-  background: #FEFF00;
+  background: #F4EB20;
 }
 
 .block-editor-content h1::after,
@@ -282,7 +282,7 @@
   bottom: 0;
   width: 20%;
   height: 3px;
-  background: #FEFF00;
+  background: #F4EB20;
 }
 
 .classic-editor-content h1::after,
