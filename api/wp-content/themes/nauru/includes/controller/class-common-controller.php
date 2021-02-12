@@ -208,7 +208,7 @@ class Common_Controller
         } elseif ( $this->post_type ) {
             return $this->post_type->label;
         } else {
-            return "";
+            return get_bloginfo( 'name' );
         }
     }
 
@@ -222,7 +222,7 @@ class Common_Controller
         if ( $this->post ) {
             return mb_strimwidth( str_replace( array("\r", "\n", "\r\n"), "", strip_tags( $this->post->post_content ) ), 0, 280, '...' );
         } else {
-            return "ナウル共和国は...";
+            return "ナウル共和国を応援するために、有志により制作された非公式WEBサイトです。";
         }
     }
 

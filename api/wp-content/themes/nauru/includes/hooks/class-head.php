@@ -7,6 +7,8 @@
  */
 namespace Nauru\Hooks;
 
+use Nauru\Router;
+
 class Head
 {
     public function __construct()
@@ -56,20 +58,25 @@ class Head
      */
     public function meta()
     {
-        //todo メタタグ出力
+        $controller = Router::load();
+        $page_title = $controller->page_title();
+        $keywords = $controller->keywords();
+        $description = $controller->description();
+        $canonical = $controller->canonical();
         ?>
-            <!-- <meta name="keywords" content=""> -->
-            <!-- <meta name="description" content=""> -->
-            <!-- <meta property="og:title" content=""> -->
-            <!-- <meta property="og:type" content=""> -->
-            <!-- <meta property="og:url" content=""> -->
+            <meta name="keywords" content="<?php echo join(',', $keywords) ?>">
+            <meta name="description" content="<?php echo $description; ?>">
+            <meta property="og:title" content="<?php echo $page_title; ?>">
+            <meta property="og:type" content="website">
+            <meta property="og:url" content="<?php echo $canonical; ?>">
             <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/home/back04.jpg">
-            <!-- <meta property="og:site_name"  content=""> -->
-            <!-- <meta property="og:description" content=""> -->
+            <meta property="og:site_name" content="<?php echo get_bloginfo( 'name' ); ?>">
+            <meta property="og:description" content="<?php echo $description; ?>">
             <!-- <meta property="fb:app_id" content=""> -->
             <meta name="twitter:card" content="summary">
             <!-- <link rel="icon" href=""> -->
             <!-- <link rel="apple-touch-icon" sizes="120x120" href=""> -->
+            <link rel="canonical" href="<?php echo $canonical; ?>">
         <?php
     }
 
