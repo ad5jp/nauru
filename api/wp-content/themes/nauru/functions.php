@@ -1,6 +1,9 @@
 <?php
 require_once( TEMPLATEPATH . '/includes/autoload.php' );
 
+define('NAURU_CSS_UPDATED', '20200214_020000');
+define('NAURU_CSS_PARAM', '?updated=' . NAURU_CSS_UPDATED);
+
 new Nauru\Core();
 new Nauru\Types\Information();
 new Nauru\Types\Gallery();

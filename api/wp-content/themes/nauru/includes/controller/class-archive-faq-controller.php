@@ -11,6 +11,6 @@ class Archive_Faq_Controller extends Common_Controller
 {
     public function enqueue()
     {
-        wp_enqueue_style( 'faq', get_template_directory_uri() . '/css/faq.css' );
+        wp_enqueue_style( 'faq', get_template_directory_uri() . '/css/faq.css' . NAURU_CSS_PARAM );
     }
 }

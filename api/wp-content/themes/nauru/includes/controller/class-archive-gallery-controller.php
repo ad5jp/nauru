@@ -16,7 +16,7 @@ class Archive_Gallery_Controller extends Common_Controller
 
     public function enqueue()
     {
-        wp_enqueue_style( 'gallery', get_template_directory_uri() . '/css/gallery.css' );
+        wp_enqueue_style( 'gallery', get_template_directory_uri() . '/css/gallery.css' . NAURU_CSS_PARAM );
     }
 
     protected function handle()

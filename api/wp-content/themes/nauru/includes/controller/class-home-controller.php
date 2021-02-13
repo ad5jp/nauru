@@ -15,7 +15,7 @@ class Home_Controller extends Common_Controller
 
     public function enqueue()
     {
-        wp_enqueue_style( 'home', get_template_directory_uri() . '/css/home.css' );
+        wp_enqueue_style( 'home', get_template_directory_uri() . '/css/home.css' . NAURU_CSS_PARAM );
     }
 
     protected function handle()

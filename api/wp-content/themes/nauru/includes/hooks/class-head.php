@@ -49,7 +49,7 @@ class Head
         wp_enqueue_style( 'font-noto-sans', '//fonts.googleapis.com/css?family=Noto+Sans+JP%3A100%2C300%2C400%2C500%2C700%2C900&#038;display=swap&#038;subset=japanese&#038;' );
         wp_enqueue_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
         wp_enqueue_style( 'destyle', get_template_directory_uri() . '/css/destyle.css' );
-        wp_enqueue_style( 'shared', get_template_directory_uri() . '/css/shared.css' );
+        wp_enqueue_style( 'shared', get_template_directory_uri() . '/css/shared.css' . NAURU_CSS_PARAM );
     }
 
     /**
