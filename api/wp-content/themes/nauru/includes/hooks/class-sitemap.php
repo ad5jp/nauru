@@ -45,7 +45,7 @@ class Sitemap
             'loc' => home_url(),
             'lastmod' => date('Y-m-d', strtotime('yesterday')),
             'changefreq' => 'daily',
-            'priority' => '1,0',
+            'priority' => '1.0',
         );
 
         //魅力
