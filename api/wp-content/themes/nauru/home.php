@@ -2,7 +2,12 @@
 
 <main class="home">
 
-<div class="home-background"></div>
+<div class="home-background">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/home/back01.jpg" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/home/back02.jpg" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/home/back03.jpg" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/home/back04.jpg" alt="">
+</div>
 
 <section class="home-main">
     <h1 class="home-main-branding"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/shared/logo-blue.png" alt="<?php echo get_bloginfo( 'name' ); ?>"></a></h1>
