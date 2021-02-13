@@ -6,6 +6,7 @@ new Nauru\Types\Information();
 new Nauru\Types\Gallery();
 new Nauru\Types\Faq();
 new Nauru\Taxonomies\Gallery_Genre();
+new Nauru\Hooks\Sitemap();
 
 if ( is_admin() ) {
     new Nauru\Hooks\Admin();

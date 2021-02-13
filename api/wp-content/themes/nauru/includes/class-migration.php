@@ -9,7 +9,7 @@ namespace Nauru;
 
 class Migration
 {
-	const VERSION = 2;
+	const VERSION = 3;
 
 	public function __construct()
 	{
